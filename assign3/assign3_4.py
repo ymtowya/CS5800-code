@@ -5,7 +5,7 @@
 # 3. Check the output
 
 # input array
-my_arr = []
+my_arr = [2,3,-2,4]
 
 # read the values of array from the file
 def set_arr(line):
