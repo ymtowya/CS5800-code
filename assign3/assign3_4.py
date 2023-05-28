@@ -1,20 +1,11 @@
 #!/usr/bin/env python
 # How to run this:
-# 1. Put in the numbers with the form as in ./example_input.txt
+# 1. Put in the numbers in the my_arr
 # 2. Run command: python3 assign3_4.py
 # 3. Check the output
 
 # input array
 my_arr = [2,3,-2,4]
-
-# read the values of array from the file
-def set_arr(line):
-    read_ins = []
-    numbers_str = line[1:-2]
-    numbers = numbers_str.split(",")
-    for num in numbers:
-        read_ins.append(int(num))
-    return read_ins
 
 # calculate the maximum product of subarray of the input array
 def get_max_product(nums):
@@ -37,13 +28,5 @@ def get_max_product(nums):
     return max_val
 
 if __name__ == '__main__':
-    with open("example_input.txt", "r") as file:
-        line = file.readline()
-        while not (line is None) and line != "":
-            if line[0] == '[':
-                # read numbers from file
-                my_arr = set_arr(line)
-                # print out results
-                print("The max product of subarray of the input array ", my_arr, " is:")
-                print(get_max_product(my_arr))
-            line = file.readline()
+    print("The max product of subarray of the input array ", my_arr, " is:")
+    print(get_max_product(my_arr))
