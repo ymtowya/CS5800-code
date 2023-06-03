@@ -1,7 +1,11 @@
 #!/usr/bin/env python
+# How to run this:
+# 1. Put in the numbers in the my_arr
+# 2. Run command: python3 assign3_4.py
+# 3. Check the output
 
 # input array
-my_arr = [2, 3, -2, 4]
+my_arr = [2,3,-2,4]
 
 # calculate the maximum product of subarray of the input array
 def get_max_product(nums):
