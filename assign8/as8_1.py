@@ -17,6 +17,6 @@ def find_max_d(arr):
     return max_D
 
 if __name__ == '__main__':
-    my_arr = [2, 3, 10, 6, 4, 8, 1]
+    my_arr = [2, 7, 10, 6, 4, 9, 0]
     print("The max difference of the input array ", my_arr, " is: ")
     print(find_max_d(my_arr))
